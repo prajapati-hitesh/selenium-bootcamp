@@ -46,3 +46,6 @@
     - Using `Actions` class
     - Using `JavaScriptExecutor` class
 14. Handling hidden elements
+
+## Brought to you by
+[logo]: https://cpsat-agile.b-cdn.net/wp-content/uploads/2019/06/abt-logo-unsmushed.png "CP-SAT"
