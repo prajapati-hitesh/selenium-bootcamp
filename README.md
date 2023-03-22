@@ -49,5 +49,6 @@
 
 ## Brought to you by
 
-<a href="https://cpsat.agiletestingalliance.org/" target="_blank"><img src="https://cpsat-agile.b-cdn.net/wp-content/uploads/2019/06/abt-logo-unsmushed.png" width="100" height="100"></a>&nbsp;
+<a href="https://cpsat.agiletestingalliance.org/" target="_blank"><img src="https://cpsat-agile.b-cdn.net/wp-content/uploads/2019/06/abt-logo-unsmushed.png" width="100" height="100"></a>
+&nbsp;
 <a href="https://www.agiletestingalliance.org/" target="_blank"><img src="https://agiletestingalliance.b-cdn.net/wp-content/uploads/2021/02/ATA-logo.png" width="110" height="110"></a>
