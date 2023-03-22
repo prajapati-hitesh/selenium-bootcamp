@@ -1,0 +1,28 @@
+# Created by .ignore support plugin (hsz.mobi)
+## Directories
+
+/.idea/
+/target/
+/css/
+/fonts/
+/cucumber-html-reports/*
+/living-document/*
+
+## Files
+*.log
+*.class
+*.iml
+*.js
+*.html
+*.otf
+*.eot
+*.svg
+*.ttf
+*.woff
+*.woff2
+*.png
+*.lock
+*.sync
+*.adoc
+*.zip
+*.txt

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="LOG_DIR_PATH">automation-logs</Property>
+        <Property name="LOG_FILE_NAME">automation-script-log</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%t] [%-5p] [L:%L] [%F:%M()] - %m%n</Property>
+    </Properties>
+    <Appenders>
+        <!-- Following appender is used to display logs in console. -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>${LOG_PATTERN}</pattern>
+            </PatternLayout>
+        </Console>
+
+        <!-- Following appender will be used to write logs to file -->
+        <RollingFile
+                name="RollingFile"
+                fileName="${LOG_DIR_PATH}/${date:dd-MM-yyyy}/${LOG_FILE_NAME}-${date:dd-MM-yyyy-HH.mm.ss}.log"
+                filePattern="${LOG_DIR_PATH}/${date:dd-MM-yyyy}/${LOG_FILE_NAME}-${date:dd-MM-yyyy-HH.mm.ss}-%i.log.gz"
+                ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.selenium.bootcamp" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>
