@@ -77,7 +77,7 @@ java --version
 
 > This should produce a result similar to the screenshot below.
 >
-> ![img.png](img.png)
+> ![img](https://postimg.cc/06NvFw9h)
 
 ```bash
 node --version
@@ -86,7 +86,7 @@ npm --version
 
 > This should produce a result similar to the screenshot below.w.
 >
-> ![img_1.png](img_1.png)
+> ![img_1.png](https://postimg.cc/dL8JyFWN][img]https://i.postimg.cc/dL8JyFWN/git-version-check.png)
 
 ```bash
 git --version
