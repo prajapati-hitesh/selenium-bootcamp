@@ -77,7 +77,7 @@ java --version
 
 > This should produce a result similar to the screenshot below.
 >
-> ![img](https://postimg.cc/06NvFw9h)
+> ![img](/installation-images/java-version-check.png)
 
 ```bash
 node --version
@@ -86,7 +86,7 @@ npm --version
 
 > This should produce a result similar to the screenshot below.w.
 >
-> ![img_1.png](https://postimg.cc/dL8JyFWN][img]https://i.postimg.cc/dL8JyFWN/git-version-check.png)
+> ![img_1.png](/installation-images/node-version-check.png)
 
 ```bash
 git --version
@@ -94,7 +94,7 @@ git --version
 
 > This should produce a result similar to the screenshot below.
 >
-> ![img_2.png](img_2.png)
+> ![img_2.png](/installation-images/git-version-check.png)
 
 ```bash
 mvn --version
@@ -102,7 +102,7 @@ mvn --version
 
 > This should produce a result similar to the screenshot below.
 >
-> ![img_3.png](img_3.png)
+> ![img_3.png](/installation-images/maven-version-check.png)
 
 :memo: Please keep in mind that the version number in the output of the above commands may differ from what is shown in
 the screenshot, and it should represent the version number of the libraries that you have installed.
