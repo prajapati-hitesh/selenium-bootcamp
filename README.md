@@ -62,7 +62,7 @@ Before running this project, please make sure that following libraries are insta
 - [Java JDK 16 or higher](https://www.oracle.com/in/java/technologies/downloads/)
 - [Node-Js LTS](https://nodejs.org/en)
 - Git ([Windows](https://gitforwindows.org/) / [Mac](https://git-scm.com/download/mac))
-- Download Maven from [here](https://maven.apache.org/download.cgi) & `MAVEN_HOME` as environment variable by
+- Download Maven from [here](https://maven.apache.org/download.cgi) & set `MAVEN_HOME` as environment variable by
   following [this](https://www.qamadness.com/knowledge-base/how-to-install-maven-and-configure-environment-variables/)
   guide
 
