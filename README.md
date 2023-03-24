@@ -109,7 +109,10 @@ the screenshot, and it should represent the version number of the libraries that
 
 ### :hammer_and_wrench: Installation
 
-1. Clone this repo in your machine
+1. Clone/download this repo in your machine
+    ```bash
+      git clone https://github.com/prajapati-hitesh/selenium-bootcamp.git
+    ```
 2. Open `cmd` or `terminal` based on your machine and run following command
     ```bash
       mvn clean test
