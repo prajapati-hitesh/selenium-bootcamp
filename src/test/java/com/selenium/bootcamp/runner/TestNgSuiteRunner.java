@@ -30,9 +30,8 @@ public class TestNgSuiteRunner {
 
         if (Browser.getEnum(browser) == Browser.Chrome) {
             ChromeOptions chromeOptions = new ChromeOptions()
-                    .addArguments("--no-default-browser-check")
-                    //.addExtensions(new File(AD_BLOCKER_PATH))
-                    .addArguments("--remote-allow-origins=*");  // this is for the error that is being faced by people with latest selenium & Chrome Version;
+                    .addArguments("--no-default-browser-check");
+            //.addExtensions(new File(AD_BLOCKER_PATH));
 
             // Initialize Browser
             DriverFactory.initBrowser(Browser.getEnum(browser.trim()), java.util.Optional.of(chromeOptions));

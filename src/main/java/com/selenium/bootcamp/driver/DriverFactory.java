@@ -47,38 +47,38 @@ public class DriverFactory {
      */
     public static void initBrowser(Browser browser, Optional<?> browserOptions) {
         switch (browser) {
-            case IE:
+            case IE -> {
                 WebDriverManager.iedriver().setup();
                 InternetExplorerOptions ieOptions = new InternetExplorerOptions();
                 ieOptions.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
                 ieOptions.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
                 driverInstance.set(new InternetExplorerDriver(ieOptions));
-                break;
-            case Edge:
+            }
+            case Edge -> {
                 WebDriverManager.edgedriver().setup();
                 driverInstance.set(new EdgeDriver());
-                break;
-            case Firefox:
+            }
+            case Firefox -> {
+                System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
                 WebDriverManager.firefoxdriver().setup();
                 if (browserOptions.isPresent()) {
                     driverInstance.set(new FirefoxDriver((FirefoxOptions) browserOptions.get()));
                 } else {
                     driverInstance.set(new FirefoxDriver());
                 }
-                break;
-            case Chromium:
+            }
+            case Chromium -> {
                 WebDriverManager.chromiumdriver().setup();
                 driverInstance.set(new ChromeDriver());
-                break;
-            default:
+            }
+            default -> {
                 WebDriverManager.chromedriver().setup();
                 if (browserOptions.isPresent()) {
                     driverInstance.set(new ChromeDriver((ChromeOptions) browserOptions.get()));
                 } else {
                     driverInstance.set(new ChromeDriver());
                 }
-
-                break;
+            }
         }
 
         // Maximize browser
