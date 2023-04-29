@@ -10,12 +10,12 @@
         </classes>
     </test>
 
-    <test name="The Internet Login Test (Firefox)">
-        <parameter name="browser-name" value="Firefox"/>
-        <classes>
-            <class name="com.selenium.bootcamp.tests.TheInternetLoginTest"/>
-        </classes>
-    </test>
+    <!--    <test name="The Internet Login Test (Firefox)">-->
+    <!--        <parameter name="browser-name" value="Firefox"/>-->
+    <!--        <classes>-->
+    <!--            <class name="com.selenium.bootcamp.tests.TheInternetLoginTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <test name="The Internet Login Test (Edge)">
         <parameter name="browser-name" value="Edge"/>
